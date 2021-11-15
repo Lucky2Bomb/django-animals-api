@@ -1,72 +1,144 @@
-{
-    "family": [
-        {
-            "name": "cat"
-        },
-        {
-            "name": "eagle"
-        },
-        {
-            "name": "owls"
-        },
-        {
-            "name": "canines"
-        },
-        {
-            "name": "hippopotamus"
-        }
-    ],
-    "movetype": [
-        {
-            "name": "air"
-        },
-        {
-            "name": "ground"
-        },
-        {
-            "name": "water"
-        }
-    ],
-    "protectionstatus": [
-        {
+[
+    {
+        "model": "main.ProtectionStatus",
+        "pk": 1,
+        "fields": {
             "name": "Extinct",
             "abbreviation": "EX"
-        },
-        {
+        }
+    },
+    {
+        "model": "main.ProtectionStatus",
+        "pk": 2,
+        "fields": {
             "name": "Extinct in the Wild",
             "abbreviation": "EW"
-        },
-        {
+        }
+    },
+    {
+        "model": "main.ProtectionStatus",
+        "pk": 3,
+        "fields": {
             "name": "Critically Endangered",
             "abbreviation": "CR"
-        },
-        {
+        }
+    },
+    {
+        "model": "main.ProtectionStatus",
+        "pk": 4,
+        "fields": {
             "name": "Endangered",
             "abbreviation": "EN"
-        },
-        {
+        }
+    },
+    {
+        "model": "main.ProtectionStatus",
+        "pk": 5,
+        "fields": {
             "name": "Vulnerable",
             "abbreviation": "VU"
-        },
-        {
+        }
+    },
+    {
+        "model": "main.ProtectionStatus",
+        "pk": 6,
+        "fields": {
             "name": "Near Threatened",
             "abbreviation": "NT"
-        },
-        {
+        }
+    },
+    {
+        "model": "main.ProtectionStatus",
+        "pk": 7,
+        "fields": {
             "name": "Least Concern",
             "abbreviation": "LC"
-        },
-        {
+        }
+    },
+    {
+        "model": "main.ProtectionStatus",
+        "pk": 8,
+        "fields": {
             "name": "Data Deficient",
             "abbreviation": "DD"
-        },
-        {
+        }
+    },
+    {
+        "model": "main.ProtectionStatus",
+        "pk": 9,
+        "fields": {
             "name": "Not Evaluated",
             "abbreviation": "NE"
         }
-    ],
-    "animal": [
-        {
+    },
+
+
+    {
+        "model": "main.Family",
+        "pk": 1,
+        "fields": {
+            "name": "cat"
+        }
+    },
+    {
+        "model": "main.Family",
+        "pk": 2,
+        "fields": {
+            "name": "eagle"
+        }
+    },
+    {
+        "model": "main.Family",
+        "pk": 3,
+        "fields": {
+            "name": "owl"
+        }
+    },
+    {
+        "model": "main.Family",
+        "pk": 4,
+        "fields": {
+            "name": "canine"
+        }
+    },
+    {
+        "model": "main.Family",
+        "pk": 5,
+        "fields": {
+            "name": "hippopotamus"
+        }
+    },
+
+
+
+    {
+        "model": "main.MoveType",
+        "pk": 1,
+        "fields": {
+            "name": "air"
+        }
+    },
+    {
+        "model": "main.MoveType",
+        "pk": 2,
+        "fields": {
+            "name": "ground"
+        }
+    },
+    {
+        "model": "main.MoveType",
+        "pk": 3,
+        "fields": {
+            "name": "water"
+        }
+    },
+
+
+    
+    {
+        "model": "main.Animal",
+        "pk": 1,
+        "fields": {
             "name": "Athene noctua",
             "domesticated": true,
             "lifetime": 16.0,
@@ -78,8 +150,12 @@
             "protection_status_id": 7,
             "move_type_id": 1,
             "family_id": 3
-        },
-        {
+        }
+    },
+    {
+        "model": "main.Animal",
+        "pk": 2,
+        "fields": {
             "name": "Caracal",
             "domesticated": true,
             "lifetime": 17.5,
@@ -91,8 +167,12 @@
             "protection_status_id": 7,
             "move_type_id": 2,
             "family_id": 1
-        },
-        {
+        }
+    },
+    {
+        "model": "main.Animal",
+        "pk": 3,
+        "fields": {
             "name": "Hippopótamus amphíbius",
             "domesticated": false,
             "lifetime": 45.0,
@@ -104,8 +184,12 @@
             "protection_status_id": 5,
             "move_type_id": 2,
             "family_id": 5
-        },
-        {
+        }
+    },
+    {
+        "model": "main.Animal",
+        "pk": 4,
+        "fields": {
             "name": "Felis catus",
             "domesticated": true,
             "lifetime": 16.0,
@@ -118,5 +202,6 @@
             "move_type_id": 2,
             "family_id": 1
         }
-    ]
-}
+    }
+]
+
